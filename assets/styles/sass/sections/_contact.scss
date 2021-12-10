@@ -1,0 +1,68 @@
+.form {
+    width: 100%;
+}
+
+.form form>div {
+    display: flex;
+}
+
+#form-contact label {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+#form-contact input.form-control {
+    height: 35px;
+    width: 100%;
+}
+
+#form-contact textarea {
+    max-height: 215px;
+}
+
+.form-control:focus {
+    border-color: #d1bb95;
+    box-shadow: 0px 0px 5px #d1bb95;
+}
+
+#form-contact button {
+    width: 150px;
+    background-color: #d1bb95;
+    border-color: #d1bb95;
+    color: #fff;
+}
+
+.link_contact_2 a {
+    text-align: end !important;
+    float: right;
+}
+
+.visit a:hover,
+.link_contact a:hover {
+    color: #d1bb95;
+    background-color: transparent;
+    border: 1px solid #d1bb95;
+}
+
+.visit a,
+.link_contact a {
+    background-color: #d1bb95;
+    padding: 4px;
+    display: flex;
+    height: 35px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #595959;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px),
+only screen and (min-width:576px) and (max-width:767px),
+only screen and (max-width:767px) {
+    .link_contact {
+        font-size: 12px;
+    }
+}

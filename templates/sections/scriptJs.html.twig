@@ -1,0 +1,120 @@
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js --><script src="{{ asset('js/jquery/jquery-2.2.4.min.js') }}"> </script>
+<!-- Popper js -->
+<script src="{{ asset('js/bootstrap/popper.min.js') }}"></script>
+<!-- Bootstrap js -->
+<script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+<!-- All Plugins js -->
+<script src="{{ asset('js/plugins/plugins.js') }}"></script>
+<!-- Active js -->
+<script src="{{ asset('js/active.js') }}"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+{{ encore_entry_script_tags('app') }}
+<script>
+    $(document).ready(function(){
+        const sr = ScrollReveal();
+        sr.reveal('.h3_title', {
+            origin : 'top',
+            duration : 2000,
+            distance : "50px",
+        }); //
+        sr.reveal('.comp_description', {
+            origin : 'bottom',
+            duration : 1500,
+            distance : "50px",
+        });  
+
+        sr.reveal('.link_contact', {
+            origin : 'bottom',
+            duration : 1500,
+            distance : "50px",
+            delay : 500,
+        }); 
+
+        sr.reveal('.img_double', {
+            origin : 'right',
+            duration : 1500,
+            distance : "50px",
+            
+        }); 
+        sr.reveal('.img_simple', {
+            origin : 'left',
+            duration : 1500,
+            distance : "50px",
+            
+        }); //
+
+        sr.reveal('.unite_tecno', {
+            origin : 'bottom',
+            duration : 1500,
+            distance : "50px",
+            
+        });
+        sr.reveal('.techno_desc', {
+            origin : 'bottom',
+            duration : 1500,
+            distance : "50px",
+            delay : 500,    
+            
+        });
+
+        $("#scrollDown").on('click', function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top - 85
+            }, 1500);
+        });
+
+        $('a').on('click', function(ev) {
+            ev.preventDefault();
+            var target = $(this).attr('href').replaceAll("#", "");
+            if(target !=""){
+                $('html, body').animate({
+                    scrollTop: $("#" + target).offset().top - 85
+                }, 1500);
+            }
+        });
+
+        $('.form-control').keyup(function(){
+            $(".info").fadeOut("slow");
+        })
+
+        $("#sendMail").click(function(ev){
+            ev.preventDefault();
+            var email  =  $("#mail").val();
+            var num = $("#phone").val();
+            var nom = $("#nom").val();
+            var message = $("#message").val();
+            var data = {
+                "email" : email,
+                "nom" : nom,
+                "phone" : num,
+                "message" : message
+            }
+            $.ajax({
+                url : "{{ path('home') }}",
+                type : "POST",
+                data : data,
+                dataType : "html",
+                beforeSend : function(){
+                    $("#sendMail span").text('Patienter ...');
+                },
+                success : function(response){
+                    if(response == "ok"){
+                        $(".info p").text('Votre email a bien été envoyé, merci');
+                        $("#sendMail span").text('Envoyer');
+                        $(".info").fadeIn("slow");
+                    }
+                    else{
+                        $(".info p").text(response);
+                        $("#sendMail span").text('Envoyer');
+                        $(".info").fadeIn("slow");
+                    }
+                }, 
+                error : function(){
+                    console.log("error en mail");
+                }
+            })
+
+        })
+    })
+</script>

@@ -1,0 +1,20 @@
+// other css 
+@import '../other-css/bootstrap.min.css';
+@import '../other-css/classy-nav.css';
+@import '../other-css/owl.carousel.min.css';
+@import '../other-css/animate.css';
+@import '../other-css/magnific-popup.css';
+@import '../other-css/font-awesome.min.css';
+// my own scss
+@import 'responsive';
+@import 'variables';
+@import 'typography';
+@import 'base';
+// sections
+@import 'sections/navigation';
+@import 'sections/slider';
+@import 'sections/portfolio';
+@import 'sections/competence';
+@import 'sections/techno';
+@import 'sections/contact';
+@import 'sections/footer';

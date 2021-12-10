@@ -1,0 +1,36 @@
+.demi_comp {
+    width: 50%;
+}
+
+.comp_description p {
+    padding-left: 25px;
+    text-align: justify;
+}
+
+.content_comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:576px) and (max-width:767px),
+only screen and (max-width:767px) {
+    .content_comp {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px),
+only screen and (min-width:576px) and (max-width:767px),
+only screen and (max-width:767px) {
+    .comp_description p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px),
+only screen and (max-width:767px) {
+    .demi_comp {
+        width: 100%;
+    }
+}

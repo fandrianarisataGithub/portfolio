@@ -2,57 +2,48 @@
 
 namespace App\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
- /**
+/**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @ORM\InheritanceType("JOINED")
- * @ORM\DiscriminatorColumn(name="type", type="string")
- * @ORM\DiscriminatorMap({"membre" = "Membre", "etudiant" = "Etudiant", "professeur" = "Professeur", "admin" = "Admin", "responsable" : "Responsable"})
  */
-abstract class User implements UserInterface
+class User implements UserInterface
 {
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    protected $id;
+    private $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
-    protected $email;
+    private $email;
 
     /**
      * @ORM\Column(type="json")
      */
-    protected $roles = [];
+    private $roles = [];
 
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
      */
-    protected $password;
+    private $password;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\OneToMany(targetEntity=BlogPost::class, mappedBy="user")
      */
-    protected $nom;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    protected $prenom;
+    private $blogPosts;
 
     public function __construct()
     {
-        $this->articles = new ArrayCollection();
-        $this->commentaires = new ArrayCollection();
+        $this->blogPosts = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -68,6 +59,7 @@ abstract class User implements UserInterface
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
         return $this;
     }
 
@@ -103,7 +95,7 @@ abstract class User implements UserInterface
     /**
      * @see UserInterface
      */
-    public function getPassword(): ?string
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -135,27 +127,32 @@ abstract class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    
-    public function getNom(): ?string
+    /**
+     * @return Collection|BlogPost[]
+     */
+    public function getBlogPosts(): Collection
     {
-        return $this->nom;
+        return $this->blogPosts;
     }
 
-    public function setNom(string $nom): self
+    public function addBlogPost(BlogPost $blogPost): self
     {
-        $this->nom = $nom;
+        if (!$this->blogPosts->contains($blogPost)) {
+            $this->blogPosts[] = $blogPost;
+            $blogPost->setUser($this);
+        }
 
         return $this;
     }
 
-    public function getPrenom(): ?string
+    public function removeBlogPost(BlogPost $blogPost): self
     {
-        return $this->prenom;
-    }
-
-    public function setPrenom(?string $prenom): self
-    {
-        $this->prenom = $prenom;
+        if ($this->blogPosts->removeElement($blogPost)) {
+            // set the owning side to null (unless already changed)
+            if ($blogPost->getUser() === $this) {
+                $blogPost->setUser(null);
+            }
+        }
 
         return $this;
     }
