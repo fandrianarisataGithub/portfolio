@@ -4,7 +4,7 @@
 
 		<TitleSection 
           title = "Skills"
-          paragraph = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+          :paragraph = "paragraph"
         />
 		
         <div class="row skills-content">
@@ -34,13 +34,46 @@ export default{
 			skills : [
 				{
 					name : 'HTML',
-					note : 90
+					note : 99
 				},
 				{
 					name : 'CSS/SCSS',
+					note : 99
+				},
+				{
+					name : 'Javascript',
+					note : 90
+				},
+				{
+					name : 'Vue.js',
+					note : 90
+				},
+				{
+					name : 'PHP',
+					note : 90
+				},
+				{
+					name : 'Symfony',
+					note : 85
+				},
+				{
+					name : 'GIT',
+					note : 95
+				},
+				{
+					name : 'Agile Scrum',
 					note : 80
-				}
-			]
+				},
+				{
+					name : 'OS Windows',
+					note : 90
+				},
+				{
+					name : 'OS Linux',
+					note : 80
+				},
+			],
+			paragraph : `I possess a robust skill set in web development, showcasing proficiency in HTML, CSS, JavaScript, and PHP. My expertise in HTML allows me to create well-structured and semantic web pages, ensuring an optimal user experience. Additionally, my mastery of CSS enables me to design visually appealing and responsive interfaces, ensuring a seamless presentation across various devices. I am adept at harnessing the power of JavaScript to implement dynamic and interactive features, enhancing the functionality of websites. Moreover, my proficiency in PHP extends my capabilities, allowing me to develop efficient and scalable server-side solutions. With a keen attention to detail and a passion for clean, efficient code, I am well-equipped to contribute effectively to any web development project.`
 		}
 	},
 	components : {

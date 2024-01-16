@@ -7,9 +7,9 @@
     <HeroSection />
     <main id="main">
       <AboutSection />
-      <FactsSection />
-      <SkillsSection />
+      <!--FactsSection /-->
       <ResumeSection />
+      <SkillsSection />
       <PortfolioSection />
       <ServicesSection />
       <TestimonialsSection />
