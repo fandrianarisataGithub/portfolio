@@ -7,12 +7,12 @@ body {
   }
   
   a {
-    color: #149ddd;
+    color: $h2-after-color;
     text-decoration: none;
   }
   
   a:hover {
-    color: #37b3ed;
+    color: $link-a-hover;
     text-decoration: none;
   }
   
@@ -35,7 +35,7 @@ body {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #149ddd;
+    background: $h2-after-color;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -44,13 +44,13 @@ body {
   
   .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: $white;
     line-height: 0;
   }
   
   .back-to-top:hover {
     background: #2eafec;
-    color: #fff;
+    color: $white;
   }
   
   .back-to-top.active {

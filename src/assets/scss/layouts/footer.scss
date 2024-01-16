@@ -10,18 +10,26 @@
     bottom: 0;
     width: 300px;
     z-index: 9999;
-    background: #040b14;
-  }
-  
-  #footer .copyright {
-    text-align: center;
-  }
-  
-  #footer .credits {
-    padding-top: 5px;
-    text-align: center;
-    font-size: 13px;
-    color: #eaebf0;
+    background: $dark-color;
+    .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #212431;
+      color: $white;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+      &:hover {
+        background: $h2-after-color;
+        color: $white;
+        text-decoration: none;
+      }
+    }
   }
   
   @media (max-width: 1199px) {

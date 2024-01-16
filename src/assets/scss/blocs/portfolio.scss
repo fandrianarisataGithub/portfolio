@@ -10,7 +10,7 @@
     margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
-    background: #fff;
+    background: $white;
     border-radius: 50px;
     padding: 2px 15px;
   }
@@ -30,7 +30,7 @@
   
   .portfolio #portfolio-flters li:hover,
   .portfolio #portfolio-flters li.filter-active {
-    color: #149ddd;
+    color: $h2-after-color;
   }
   
   .portfolio #portfolio-flters li:last-child {
@@ -70,7 +70,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a {
-    color: #fff;
+    color: $white;
     font-size: 28px;
     text-align: center;
     background: rgba(20, 157, 221, 0.75);
@@ -83,7 +83,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a+a {
-    border-left: 1px solid #37b3ed;
+    border-left: 1px solid $h2-after-color-hover;
   }
   
   .portfolio .portfolio-wrap:hover::before {
@@ -118,13 +118,13 @@
   .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: $white;
     opacity: 1;
-    border: 1px solid #149ddd;
+    border: 1px solid $h2-after-color;
   }
   
   .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #149ddd;
+    background-color: $h2-after-color;
   }
   
   .portfolio-details .portfolio-info {

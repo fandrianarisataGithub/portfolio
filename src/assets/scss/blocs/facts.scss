@@ -13,7 +13,7 @@
   .facts .count-box i {
     display: block;
     font-size: 44px;
-    color: #149ddd;
+    color: $h2-after-color;
     float: left;
     line-height: 0;
   }
@@ -23,7 +23,7 @@
     line-height: 40px;
     display: block;
     font-weight: 700;
-    color: #050d18;
+    color: $dark-color;
     margin-left: 60px;
   }
   
@@ -32,19 +32,19 @@
     margin: 0 0 0 60px;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
-    color: #122f57;
+    color: $p-fact-color;
   }
   
   .facts .count-box a {
     font-weight: 600;
     display: block;
     margin-top: 20px;
-    color: #122f57;
+    color: $p-fact-color;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     transition: ease-in-out 0.3s;
   }
   
   .facts .count-box a:hover {
-    color: #1f5297;
+    color: $dark-border;
   }

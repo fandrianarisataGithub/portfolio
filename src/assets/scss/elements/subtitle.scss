@@ -6,14 +6,21 @@
         margin-bottom: 20px;
         padding-bottom: 20px;
         position: relative;
-        color: #173b6c;
+        color: $h2-color;
+        opacity : 0;
+        margin-left : 100px;
+        &.animation-on{
+            opacity : 1;
+            margin-left : 0px;
+            transition: all 1s ease-in-out;
+        }
         &::after {
             content: "";
             position: absolute;
             display: block;
             width: 50px;
             height: 3px;
-            background: #149ddd;
+            background: $h2-after-color;
             bottom: 0;
             left: 0;
         }

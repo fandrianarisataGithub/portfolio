@@ -27,6 +27,7 @@ import HeroSection from './components/blocs/HeroSection.vue';
 import PortfolioSection from './components/blocs/PortfolioSection.vue';
 import ResumeSection from './components/blocs/ResumeSection.vue';
 import ServicesSection from './components/blocs/ServicesSection.vue';
+import SkillsAnimate from './components/blocs/SkillsAnimate.vue';
 import SkillsSection from './components/blocs/SkillsSection.vue';
 import TestimonialsSection from './components/blocs/TestimonialsSection.vue';
 import Footer from './components/layouts/FooterLayout.vue';
@@ -44,6 +45,7 @@ export default {
     AboutSection,
     FactsSection, 
     SkillsSection,
+    SkillsAnimate,
     ResumeSection, 
     PortfolioSection,
     ServicesSection,

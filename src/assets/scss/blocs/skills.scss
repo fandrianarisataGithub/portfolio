@@ -15,7 +15,7 @@
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #050d18;
+    color: $dark-color;
   }
   
   .skills .progress .skill .val {
@@ -24,7 +24,7 @@
   }
   
   .skills .progress-bar-wrap {
-    background: #dce8f8;
+    background: $progress-bar-color;
     height: 10px;
   }
   
@@ -32,5 +32,5 @@
     width: 1px;
     height: 10px;
     transition: 0.9s;
-    background-color: #149ddd;
+    background-color: $h2-after-color;
   }

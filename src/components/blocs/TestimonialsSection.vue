@@ -2,10 +2,10 @@
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
-        <div class="element-subtitle">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+        <TitleSection 
+          title = "Testimonials"
+          paragraph = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+        />
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
@@ -82,3 +82,12 @@
       </div>
     </section>
 </template>
+<script>
+import TitleSection from '@/components/elements/TitleSection.vue';
+
+export default{
+    components : {
+		TitleSection
+	}
+}
+</script>

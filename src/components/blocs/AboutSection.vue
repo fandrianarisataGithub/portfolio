@@ -1,15 +1,13 @@
 <template>
     <section id="about" class="about">
       <div class="container">
-
-        <div class="element-subtitle">
-          <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
+		<TitleSection 
+			title = "About"
+			paragraph = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+		/>
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="/img/fenitra-pdp-square.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>UI/UX Designer &amp; Web Developer.</h3>
@@ -45,3 +43,12 @@
       </div>
     </section>
 </template>
+<script>
+import TitleSection from '@/components/elements/TitleSection.vue';
+
+export default{
+      components : {
+		TitleSection
+	  }
+    }
+</script>

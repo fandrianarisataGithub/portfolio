@@ -12,7 +12,7 @@
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #1f5297;
+    border-left: 2px solid $dark-border;
     position: relative;
   }
   
@@ -55,6 +55,6 @@
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #fff;
-    border: 2px solid #1f5297;
+    background: $white;
+    border: 2px solid $dark-border;
   }

@@ -4,7 +4,7 @@
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg.jpg") top center;
+    background: url("../img/fenitra-hero-bd.png") top center;
     background-size: cover;
   }
   
@@ -30,21 +30,21 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: #fff;
+    color: $white;
   }
   
   #hero p {
-    color: #fff;
+    color: $white;
     margin-bottom: 50px;
     font-size: 26px;
     font-family: "Poppins", sans-serif;
   }
   
   #hero p span {
-    color: #fff;
+    color: $white;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid #149ddd;
+    border-bottom: 3px solid $h2-after-color;
   }
   
   @media (min-width: 1024px) {

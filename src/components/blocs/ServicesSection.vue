@@ -43,3 +43,12 @@
       </div>
     </section>
 </template>
+<script>
+import TitleSection from '@/components/elements/TitleSection.vue';
+
+export default{
+    components : {
+		TitleSection
+	}
+}
+</script>

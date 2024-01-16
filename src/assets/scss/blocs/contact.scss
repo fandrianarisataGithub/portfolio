@@ -7,14 +7,14 @@
   
   .contact .info {
     padding: 30px;
-    background: #fff;
+    background: $white;
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   }
   
   .contact .info i {
     font-size: 20px;
-    color: #149ddd;
+    color: $h2-after-color;
     float: left;
     width: 44px;
     height: 44px;
@@ -38,7 +38,7 @@
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #173b6c;
+    color: $h2-color;
   }
   
   .contact .info .email p {
@@ -53,7 +53,7 @@
     font-size: 18px;
     display: inline-block;
     background: #333;
-    color: #fff;
+    color: $white;
     line-height: 1;
     padding: 8px 0;
     border-radius: 50%;
@@ -65,21 +65,21 @@
   }
   
   .contact .info .social-links a:hover {
-    background: #149ddd;
-    color: #fff;
+    background: $h2-after-color;
+    color: $white;
   }
   
   .contact .info .email:hover i,
   .contact .info .address:hover i,
   .contact .info .phone:hover i {
-    background: #149ddd;
-    color: #fff;
+    background: $h2-after-color;
+    color: $white;
   }
   
   .contact .php-email-form {
     width: 100%;
     padding: 30px;
-    background: #fff;
+    background: $white;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   }
   
@@ -97,7 +97,7 @@
   
   .contact .php-email-form .error-message {
     display: none;
-    color: #fff;
+    color: $white;
     background: #ed3c0d;
     text-align: left;
     padding: 15px;
@@ -110,7 +110,7 @@
   
   .contact .php-email-form .sent-message {
     display: none;
-    color: #fff;
+    color: $white;
     background: #18d26e;
     text-align: center;
     padding: 15px;
@@ -119,7 +119,7 @@
   
   .contact .php-email-form .loading {
     display: none;
-    background: #fff;
+    background: $white;
     text-align: center;
     padding: 15px;
   }
@@ -160,16 +160,16 @@
   }
   
   .contact .php-email-form button[type=submit] {
-    background: #149ddd;
+    background: $h2-after-color;
     border: 0;
     padding: 10px 24px;
-    color: #fff;
+    color: $white;
     transition: 0.4s;
     border-radius: 4px;
   }
   
   .contact .php-email-form button[type=submit]:hover {
-    background: #37b3ed;
+    background: $h2-after-color-hover;
   }
   
   @keyframes animate-loading {

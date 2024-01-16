@@ -1,12 +1,10 @@
 <template>
     <section id="facts" class="facts">
       <div class="container">
-
-        <div class="element-subtitle">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
+        <TitleSection 
+          title = "Facts"
+          paragraph = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+        />
         <div class="row no-gutters">
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
@@ -46,3 +44,12 @@
       </div>
     </section>
 </template>
+<script>
+import TitleSection from '@/components/elements/TitleSection.vue';
+
+export default{
+    components : {
+		TitleSection
+	}
+}
+</script>
