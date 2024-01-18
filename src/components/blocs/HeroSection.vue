@@ -32,6 +32,7 @@ export default {
     },
     mounted(){
         this.type();
+        //console.log(__APP_ENV__)
     }
 }
 </script>

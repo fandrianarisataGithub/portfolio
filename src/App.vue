@@ -1,9 +1,10 @@
 <template>
   <div>
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"
+    <i class="bi mobile-nav-toggle d-xl-none"
+      :class="isMenuOpen ? 'bi-x' : 'bi-list'"
       @click="isMenuOpen = !isMenuOpen"
     ></i>
-    <Header />
+    <Header :active-navbar="isMenuOpen"/>
     <HeroSection />
     <main id="main">
       <AboutSection />

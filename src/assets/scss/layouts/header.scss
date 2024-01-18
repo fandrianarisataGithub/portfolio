@@ -40,5 +40,8 @@
 @media (max-width: 1199px) {
   #header {
     left: -300px;
+    &.active-navbar{
+      left : 0px;
+    }
   }
 }

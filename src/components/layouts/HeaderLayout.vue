@@ -1,5 +1,5 @@
 <template>
-    <header id="header">
+    <header id="header" :class="{'active-navbar' : activeNavbar}">
     <div class="d-flex flex-column">
 
       <div class="profile">
@@ -22,6 +22,16 @@
 </template>
 <script>
 export default {
-    
+    props : {
+      activeNavbar : {
+        type : Boolean
+      }
+    },
+    methods : {
+      closeNavbar(){
+        //this.activeNavbar = false;
+        console.log(this.activeNavbar)
+      }
+    }
 }
 </script>
