@@ -21,7 +21,7 @@
 				v-for="(port, i) in listPor" :key="i"
 				class="col-lg-4 col-md-6 portfolio-item" :class="'filter-' + port.category">
 				<div class="portfolio-wrap">
-					<img :src="'/img/portfolio/' + port.image" class="img-fluid" alt="Sata Fenitriniaina portfolio">
+					<img :src="'/img/portfolio/baobab-tree.png'" class="img-fluid" alt="Sata Fenitriniaina portfolio">
 					<div class="portfolio-links">
 						<a :href="'/img/portfolio/' + port.image"
 						data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3">
