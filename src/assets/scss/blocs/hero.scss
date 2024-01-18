@@ -23,6 +23,15 @@
     position: relative;
     z-index: 2;
     min-width: 300px;
+    @include media-breakpoint-up(xs){
+      max-width: 250px;
+    }
+    @include media-breakpoint-up(sm){
+      max-width: 300px;
+    }
+    @include media-breakpoint-up(md){
+      max-width: auto;
+    }
   }
   
   #hero h1 {

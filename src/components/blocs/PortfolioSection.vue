@@ -82,7 +82,7 @@ export default{
 	},
 	mounted(){
 		this.mode = __APP_ENV__;
-		console.log(this.mode)
+		//console.log(this.mode)
 	}
 }
 </script>
