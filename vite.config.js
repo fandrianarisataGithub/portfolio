@@ -28,7 +28,7 @@ export default defineConfig(({ command, mode }) => {
     define: {
       __APP_ENV__: JSON.stringify(env.APP_ENV),
     },
-    base : mode === 'production' ? '/portfolio/' : '/',
+    base : env.APP_ENV === 'prod' ? '/portfolio/' : '/',
   }
 })
 
