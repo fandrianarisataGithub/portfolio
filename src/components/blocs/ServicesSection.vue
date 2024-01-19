@@ -4,39 +4,51 @@
 
         <TitleSection 
           title = "Services"
-          paragraph = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+          :paragraph = "paragraph"
         />
         
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="icon"><i class="bi bi-chat-dots"></i></div>
+            <h4 class="title"><a href="#">Consultation and Advisory</a></h4>
+            <p class="description">
+              Offering advice and recommendations on best practices, technological choices, and process optimization to achieve client goals.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <div class="icon"><i class="bi bi-pencil-square"></i></div>
+            <h4 class="title"><a href="">Website Design</a></h4>
+            <p class="description">
+				Creating websites by designing mockups, choosing colors, fonts, and images to craft an attractive and user-friendly interface.
+			</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <div class="icon"><i class="bi bi-layers"></i></div>
+            <h4 class="title"><a href="">Full-Stack Development</a></h4>
+            <p class="description">
+				Providing services in both front-end and back-end development to create comprehensive web applications.
+			</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="icon"><i class="bi bi-puzzle"></i></div>
+            <h4 class="title"><a href="">System Integration</a></h4>
+            <p class="description">
+				Integrating different technologies, services, or systems to ensure seamless and efficient communication between them.
+			</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <div class="icon"><i class="bi bi-globe"></i></div>
+            <h4 class="title"><a href="">Web Application Development</a></h4>
+            <p class="description">
+				Creating custom web applications to meet specific client needs, whether for e-commerce, content management, scheduling, etc.
+			</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <div class="icon"><i class="bi bi-speedometer"></i></div>
+            <h4 class="title"><a href="">Performance Optimization</a></h4>
+            <p class="description">
+				mproving website performance by optimizing code, images, caching resources, etc.
+			</p>
           </div>
         </div>
 
@@ -48,7 +60,14 @@ import TitleSection from '@/components/elements/TitleSection.vue';
 
 export default{
     components : {
-		TitleSection
+      TitleSection
+    },
+	data(){
+		return {
+			paragraph : `
+				Explore a spectrum of tailored solutions in our Services section, where we are committed to meeting your digital requirements with precision and innovation. Our team of skilled web developers specializes in website design, front-end and back-end development, system integration, and more. Whether you're aiming to enhance your online presence, optimize performance, or fortify web security, our comprehensive suite of services is designed to exceed expectations. Join us on a journey through the dynamic realm of web technologies, where we deliver customized solutions crafted to elevate your digital landscape.
+			`
+		}
 	}
 }
 </script>

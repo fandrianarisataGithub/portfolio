@@ -4,7 +4,7 @@
       :class="isMenuOpen ? 'bi-x' : 'bi-list'"
       @click="isMenuOpen = !isMenuOpen"
     ></i>
-    <Header :active-navbar="isMenuOpen"/>
+    <Header :active-navbar="isMenuOpen" @hide-navbar=" isMenuOpen = false"/>
     <HeroSection />
     <main id="main">
       <AboutSection />
@@ -13,7 +13,7 @@
       <SkillsSection />
       <PortfolioSection />
       <ServicesSection />
-      <TestimonialsSection />
+      <!--TestimonialsSection /-->
       <ContactSection />
     </main>
     <Footer />
