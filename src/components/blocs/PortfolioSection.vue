@@ -24,9 +24,10 @@
 						:src="mode == 'dev' ? '/img/portfolio/' + port.image : '/portfolio/img/portfolio/' + port.image" class="img-fluid" alt="Sata Fenitriniaina portfolio">
 					<div class="portfolio-links">
 						<a target="_blank" :href="port.site"
-						data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3">
+							data-gallery="portfolioGallery" class="portfolio-lightbox" :title="port.category">
 						<span>View {{ port.category }}</span>
 						</a>
+						<a href="#" title="More Details"><i class="bx bx-link"></i></a>
 					</div>
 				</div>
 				<!--div class="port-detail">
