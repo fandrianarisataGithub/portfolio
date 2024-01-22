@@ -11,7 +11,7 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Webapp</li>
               <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Website</li>
+              <li data-filter=".filter-website">Website</li>
             </ul>
           </div>
         </div>
@@ -21,7 +21,9 @@
 				class="col-lg-4 col-md-6 portfolio-item" :class="'filter-' + port.category">
 				<div class="portfolio-wrap">
 					<img 
-						:src="mode == 'dev' ? '/img/portfolio/' + port.image : '/portfolio/img/portfolio/' + port.image" class="img-fluid" alt="Sata Fenitriniaina portfolio">
+						:src="mode == 'dev' ? '/img/portfolio/' + port.image : '/portfolio/img/portfolio/' + port.image" 
+						class="img-fluid" alt="Sata Fenitriniaina portfolio"
+					/>
 					<div class="portfolio-links">
 						<a target="_blank" :href="port.site"
 							data-gallery="portfolioGallery" class="portfolio-lightbox" :title="port.category">
