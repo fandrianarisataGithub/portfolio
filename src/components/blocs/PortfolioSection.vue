@@ -16,7 +16,6 @@
           </div>
         </div>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
 			<div 
 				v-for="(port, i) in listPor" :key="i"
 				class="col-lg-4 col-md-6 portfolio-item" :class="'filter-' + port.category">
@@ -24,12 +23,35 @@
 					<img 
 						:src="mode == 'dev' ? '/img/portfolio/' + port.image : '/portfolio/img/portfolio/' + port.image" class="img-fluid" alt="Sata Fenitriniaina portfolio">
 					<div class="portfolio-links">
-						<a :href="'/img/portfolio/' + port.image"
+						<a target="_blank" :href="port.site"
 						data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3">
-						<span>More details</span>
+						<span>View {{ port.category }}</span>
 						</a>
 					</div>
 				</div>
+				<!--div class="port-detail">
+					<h4 class="title">Titre</h4>
+					<div class="detail">
+						<div class="h4">Technologies : </div>
+						<ul>
+							<li>
+								<div class="h4">Frontend : </div>
+								<ul>
+									<li>JQuery/ Bootstrap</li>
+									<li>Vue.js / SASS(SCSS)</li>
+									<li>CMS Wordpress</li>
+								</ul>
+							</li>
+							<li>
+								<div class="h4">Backend : </div>
+								<ul>
+									<li>PHP / wordpress</li>
+									<li>Mysql</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div-->
 			</div>
 
         </div>
@@ -38,6 +60,8 @@
     </section>
 </template>
 <script>
+import { RouterLink } from 'vue-router';
+
 import TitleSection from '@/components/elements/TitleSection.vue';
 
 export default{
@@ -51,29 +75,54 @@ export default{
 			,
 			listPor : [
 				{
-					image : 'baobab-tree.png',
-					category : 'web'
-				},
-				{
-					image : 'dashboardenac.png',
-					category : 'app'
-				},
-				{
-					image : 'royalbeach.png',
-					category : 'web'
-				},
-				{
-					image : 'royal-andilana.png',
-					category : 'web'
-				},
-				{
+					id : 1,
 					image : 'ctrlweb.png',
-					category : 'web'
+					category : 'website',
+					description : '',
+					site : 'https://ctrlweb.ca/'
+
 				},
-			
 				{
+					id : 2,
+					image : 'baobab-tree.png',
+					category : 'website',
+					description : ``,
+					site : 'https://baobab-tree-hotel.mg/'
+				},
+				{
+					id : 3,
+					image : 'dashboardenac.png',
+					category : 'app',
+					description : '',
+					site : 'https://dashboardenac.com'
+				},
+				{
+					id : 4,
+					image : 'royalbeach.png',
+					category : 'website',
+					description : '',
+					site : 'https://royalbeach.mg/'
+				},
+				{
+					id : 5,
+					image : 'royal-andilana.png',
+					category : 'website',
+					description : '',
+					site : 'https://www.royalandilana.com/'
+				},
+				{
+					id : 6,
 					image : 'dashboardsounds.png',
-					category : 'app'
+					category : 'app',
+					description : '',
+					site : 'https://dashboardsounds.com/login'
+				},
+				{
+					id : 7,
+					image : 'tw.png',
+					category : 'website',
+					description : '',
+					site : 'https://www.tropicalwood.mg/'
 				},
 
 			]

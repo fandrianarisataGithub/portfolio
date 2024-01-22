@@ -85,6 +85,12 @@ export default{
     },
     data(){
       return {
+        person : {
+          name : '',
+          email : '',
+          subject : '',
+          message : ''
+        },
         paragraph : `
           Get in touch with us through our Contact section to seamlessly connect and explore collaboration opportunities. We value open communication and are eager to hear from you. Whether you have inquiries about our services, want to discuss a potential project, or simply wish to say hello, our team is ready to assist. Fill out the form below, and we'll ensure a prompt response. Your feedback and inquiries are important to us, and we look forward to the opportunity to engage with you.
         `,
@@ -93,34 +99,7 @@ export default{
       }
     },
 	methods: {
-    /*
-		sendEmail() {
-			// Configuration pour le service SMTP de Gmail
-			const transporter = nodemailer.createTransport({
-				service: 'Gmail',
-				auth: {
-					user: 'fandrianarisata@gmail.com',
-					pass: 'codegoogle',
-				},
-			});
-
-			// Options de l'email
-			const mailOptions = {
-				from: 'fandrianarisata@gmail.com',
-				to: 'fandrianarisata2@gmail.com',
-				subject: 'test email portfolio',
-				text: 'Contenu de l\'email en format texte',
-			};
-
-			// Envoi de l'email
-			transporter.sendMail(mailOptions, (error, info) => {
-				if (error) {
-				console.error(error);
-				} else {
-				console.log('Email envoyé : ' + info.response);
-				}
-			});
-		},*/
+    
     sendEmailError(){
       this.isSend = true;
     }

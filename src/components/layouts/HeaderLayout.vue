@@ -9,7 +9,7 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" @click="closeNavbar" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><router-link to="/" @click="closeNavbar" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></router-link></li>
           <li><a href="#about" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
@@ -21,6 +21,8 @@
   </header>
 </template>
 <script>
+import { RouterLink } from 'vue-router';
+
 export default {
     props : {
       activeNavbar : {
