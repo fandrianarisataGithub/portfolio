@@ -27,24 +27,43 @@
               <p><em>University of Antananarivo, Madagascar</em></p>
             </div>
             <div class="resume-item">
-              <h4>Data Science Training</h4>
+              <h4>Professional training in data science and preparation for the eskills academy certificate</h4>
               <h5>August, 2023</h5>
+              <p><em>INSI University</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Master’s degree in Data Science Training</h4>
+              <h5>Fev, 2024</h5>
               <p><em>INSI University</em></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
+              <h4>Data science project</h4>
+              <h5>August 2023</h5>
+              <p>
+                <em>INSI UNIVERSITY</em> (<a href="https://www.insi.mg/">Website</a>)
+              </p>
+              <ul>
+                <li>Malaria detection by using Deep learning</li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>4+ PHP-JS Developer (Symfony/vue.js)</h4>
               <h5>2019 - Present</h5>
-              <p><em>ENAC GROUP</em> (<a href="https://www.enac.mg/">Website</a>)</p>
+              <p>
+                <em>ENAC GROUP</em> (<a href="https://www.enac.mg/">Website</a>)
+              </p>
               <ul>
                 <li>Fullstack full-time office work web developer (2019 - 2023)</li>
-				<li>Freelance web developer since 2023</li>
+				        <li>Freelance web developer since 2023</li>
               </ul>
-			  <p><em>CTRLWEB</em> (<a href="https://ctrlweb.ca">Website</a>)</p>
+			        <p>
+                <em>CTRLWEB</em> (<a href="https://ctrlweb.ca">Website</a>)
+              </p>
               <ul>
-                <li>Only Frontend web developer (2021 - 2023)</li>
+                <li>Vue.js and Nuxt.js developper (2021 - 2023)</li>
               </ul>
             </div>
           </div>

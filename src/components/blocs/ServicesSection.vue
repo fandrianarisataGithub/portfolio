@@ -9,6 +9,13 @@
         
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="#">Data Science Consultancy</a></h4>
+            <p class="description">
+              Data visualization, predictive analysis from a given dataset, data classification (automated), AI design for natural languages ​​(NLP)
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-chat-dots"></i></div>
             <h4 class="title"><a href="#">Consultation and Advisory</a></h4>
             <p class="description">

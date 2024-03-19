@@ -10,7 +10,7 @@
 export default {
     data(){
         return {
-            text : `I'm a Symfony / Vue.js developer.`,
+            text : `I'm a Data scientist and Symfony / Vue.js developer.`,
             typingSpeed : 150,
             indexTyping : 0
         }
