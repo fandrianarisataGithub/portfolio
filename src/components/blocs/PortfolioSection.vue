@@ -29,7 +29,7 @@
 							data-gallery="portfolioGallery" class="portfolio-lightbox" :title="port.category">
 						<span>View {{ port.category }}</span>
 						</a>
-						<a href="#" title="More Details"><i class="bx bx-link"></i></a>
+						<router-link :to="'/detail-port/' + port.id" title="More Details"><i class="bx bx-link"></i></router-link>
 					</div>
 				</div>
 				<!--div class="port-detail">

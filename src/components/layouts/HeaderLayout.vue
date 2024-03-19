@@ -4,17 +4,39 @@
 
       <div class="profile">
         <img src="/img/fenitra-pdp-square.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Fenitriniaina (Feni)</a></h1>
+        <h1 class="text-light"><a to="/">Fenitriniaina (Feni)</a></h1>
       </div>
-
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><router-link to="/" @click="closeNavbar" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></router-link></li>
-          <li><a href="#about" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" @click="closeNavbar" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li>
+            <router-link to="/" @click="closeNavbar" class="nav-link scrollto active">
+              <i class="bx bx-home"></i> <span>Home</span>
+            </router-link>
+          </li>
+          <li v-show="!fromPortfolio">
+            <a href="#about" @click="closeNavbar" class="nav-link scrollto">
+              <i class="bx bx-user"></i><span>About</span>
+            </a></li>
+          <li v-show="!fromPortfolio">
+            <a href="#resume" @click="closeNavbar" class="nav-link scrollto">
+              <i class="bx bx-file-blank"></i> <span>Resume</span>
+            </a>
+          </li>
+          <li v-show="!fromPortfolio">
+            <a href="#portfolio" @click="closeNavbar" class="nav-link scrollto">
+              <i class="bx bx-book-content"></i> <span>Portfolio</span>
+            </a>
+          </li>
+          <li v-show="!fromPortfolio">
+            <a href="#services" @click="closeNavbar" class="nav-link scrollto">
+              <i class="bx bx-server"></i> <span>Services</span>
+            </a>
+          </li>
+          <li v-show="!fromPortfolio">
+            <a href="#contact" @click="closeNavbar" class="nav-link scrollto">
+              <i class="bx bx-envelope"></i> <span>Contact</span>
+            </a>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -27,6 +49,9 @@ export default {
     props : {
       activeNavbar : {
         type : Boolean
+      },
+      fromPortfolio : {
+        type : Boolean,
       }
     },
     methods : {
@@ -38,6 +63,9 @@ export default {
           that.$emit('hide-navbar')
         }, 1000)
       }
+    },
+    mounted(){
+      console.log('from portfolio ' + this.fromPortfolio)
     }
 }
 </script>
