@@ -19,6 +19,7 @@
     "intersection-observer": "^0.12.2",
     "nodemailer": "^6.6.3",
     "pinia": "^2.1.7",
+    "require-polyfills": "^1.0.1",
     "sass": "^1.69.7",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
