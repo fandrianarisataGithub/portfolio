@@ -1,3 +1,4 @@
+import 'require-polyfills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 //import './assets/vendor/aos/aos.css';
@@ -14,7 +15,6 @@ import './assets/vendor/swiper/swiper-bundle.min.js';
 import './assets/vendor/typed.js/typed.umd.js';
 import './assets/vendor/waypoints/noframework.waypoints.js';
 import './assets/vendor/php-email-form/validate.js';
-import 'require-polyfills';
 import './assets/js/main';
 import './assets/scss/main.scss';
 
