@@ -1,4 +1,5 @@
-import 'require-polyfills';
+import 'require-polyfills/dist/require-bundle';
+import 'require-polyfills/dist/require-polyfills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 //import './assets/vendor/aos/aos.css';
