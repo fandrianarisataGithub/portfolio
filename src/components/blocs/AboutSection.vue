@@ -17,14 +17,12 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 August 1993</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+261 34 84 765 91</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Antananarivo - Madagascar</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>31</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>fandrianarisata2@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
