@@ -1,4 +1,21 @@
-
+import 'require-bundle-js/dist/require-bundle';
+import 'require-polyfills/dist/require-polyfills';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+//import './assets/vendor/aos/aos.css';
+import './../vendor/bootstrap-icons/bootstrap-icons.css';
+import './../vendor/boxicons/css/boxicons.min.css';
+import './../vendor/glightbox/css/glightbox.min.css';
+import './../vendor/swiper/swiper-bundle.min.css';
+import PureCounter  from './../vendor/purecounter/purecounter_vanilla.js';
+//import './../vendor/aos/aos.js';
+import './../vendor/bootstrap/js/bootstrap.bundle.min.js';
+import GLightbox from './../vendor/glightbox/js/glightbox.min.js';
+//import '@/assets/vendor/isotope-layout/isotope.pkgd';
+import Swiper  from './../vendor/swiper/swiper-bundle.min.js';
+import './../vendor/typed.js/typed.umd.js';
+import './../vendor/waypoints/noframework.waypoints.js';
+import './../vendor/php-email-form/validate.js';
 (function() {
   "use strict";
 
@@ -156,7 +173,7 @@
   /**
    * Porfolio isotope and filter
    */
-  /*window.addEventListener('load', () => {
+  window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -181,14 +198,14 @@
       }, true);
     }
 
-  });*/
+  });
 
   /**
    * Initiate portfolio lightbox 
    */
-  /*const portfolioLightbox = GLightbox({
+  const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });*/
+  });
 
   /**
    * Portfolio details slider

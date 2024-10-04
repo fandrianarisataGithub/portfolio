@@ -8,6 +8,7 @@ import {
   loadEnv,
 } from 'vite';
 
+import commonjs from 'vite-plugin-commonjs';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig(({ command, mode }) => {
@@ -17,6 +18,7 @@ export default defineConfig(({ command, mode }) => {
   return {
     // vite config
     plugins: [
+      commonjs(),
       vue(),
     ],
     resolve: {
