@@ -12,6 +12,7 @@
               <li data-filter=".filter-app">Webapp</li>
               <li data-filter=".filter-card">Card</li>
               <li data-filter=".filter-website">Website</li>
+			  <li data-filter=".filter-ml">Model IA</li>
             </ul>
           </div>
         </div>
@@ -29,7 +30,8 @@
 							data-gallery="portfolioGallery" class="portfolio-lightbox" :title="port.category">
 						<span>View {{ port.category }}</span>
 						</a>
-						<router-link :to="'/detail-port/' + port.id" title="More Details"><i class="bx bx-link"></i></router-link>
+						<a href="#"><i class="bx bx-link"></i></a>
+						<!--router-link :to="'/detail-port/' + port.id" title="More Details"><i class="bx bx-link"></i></router-link-->
 					</div>
 				</div>
 				<!--div class="port-detail">
@@ -126,6 +128,13 @@ export default{
 					category : 'website',
 					description : '',
 					site : 'https://www.tropicalwood.mg/'
+				},
+				{
+					id : 8,
+					image : 'accuracy.PNG',
+					category : 'ml',
+					description : '',
+					site : 'https://github.com/fandrianarisataGithub/Data-science-projet-INSI-Malaria-CNN/blob/main/Memo_dsc_malaria_detection_final.ipynb'
 				},
 
 			]

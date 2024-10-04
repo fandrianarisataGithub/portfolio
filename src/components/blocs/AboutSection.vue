@@ -10,7 +10,7 @@
             <img src="/img/fenitra-pdp-square.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>SYMFONY &amp; VUE.JS DEVELOPER.</h3>
+            <h3>DATA SCIENTIST &amp; WEB DEVELOPER.</h3>
             <p class="fst-italic">
 				Before sharing my basic information, let me express my commitment to providing top-notch services and supporting your vision with my expertise. Feel free to reach out to discuss any projects or collaboration opportunities.
             </p>
@@ -18,6 +18,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+261 34 84 765 91</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Whatsapp:</strong> <span>+261 32 51 090 13</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Antananarivo - Madagascar</span></li>
                 </ul>
               </div>
@@ -48,7 +49,14 @@ export default{
 		data(){
 			return {
 				paragraph : `
-				As a passionate web developer with five years of dedicated experience, I excel in crafting elegant front-end interfaces using HTML, CSS, and JavaScript, along with frameworks like Bootstrap, SCSS, and Vue.js. Additionally, I possess strong skills in data science, including data visualization, predictive analysis, and machine learning using Python, Pandas, and Scikit-learn. Whether working remotely or on-site, part-time or full-time, I approach my work with curiosity, thoroughness, and punctuality. Eager to continuously grow, I'm open to all service inquiries within web development and data science domains.
+				As a web developer and machine learning engineer with five years of experience, 
+        I specialize in front-end development with Vue.js and React, 
+        and back-end with PHP Symfony and Django. 
+        I have strong skills in data science, focusing on data visualization, 
+        predictive analytics, and machine learning using Python, Power BI, and SQL, with occasional use of R. 
+        I'm also experienced with cloud environments like AWS. 
+        Currently pursuing a Master’s in Machine Learning Engineering and Data Science, 
+        I'm eager to take on new challenges in both web development and data science, delivering work with precision and punctuality.
 				<br />Here are all the details about me:
 				`
 			}

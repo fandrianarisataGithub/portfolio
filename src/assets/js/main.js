@@ -11,7 +11,7 @@ import PureCounter  from './../vendor/purecounter/purecounter_vanilla.js';
 //import './../vendor/aos/aos.js';
 import './../vendor/bootstrap/js/bootstrap.bundle.min.js';
 import GLightbox from './../vendor/glightbox/js/glightbox.min.js';
-//import '@/assets/vendor/isotope-layout/isotope.pkgd';
+import 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js';
 import Swiper  from './../vendor/swiper/swiper-bundle.min.js';
 import './../vendor/typed.js/typed.umd.js';
 import './../vendor/waypoints/noframework.waypoints.js';
