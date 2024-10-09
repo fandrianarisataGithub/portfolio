@@ -26,7 +26,7 @@ export default {
                     this.$refs.typingContainer.textContent = "";
                     this.indexTyping = 0;
                     this.type();
-                }, 2000); 
+                }, 1900); 
             }
         }
     },
