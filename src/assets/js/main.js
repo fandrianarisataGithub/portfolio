@@ -1,4 +1,4 @@
-import 'require-bundle-js/dist/require-bundle';
+import loadjsUmd from 'loadjs';
 import 'require-polyfills/dist/require-polyfills';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
